@@ -1,5 +1,5 @@
 # DriveAGI
-This is **"The One"** project that OpenDriveLab is committed to contribute to the community, providing some thoughts and general picture of embracing `foundation models` into autonomous agent and system.
+This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
 ## At A Glance
 
@@ -29,11 +29,11 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Repo: https://github.com/OpenDriveLab/OpenObject 
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Detection Challenge 2023](https://opendrivelab.com/AD23Challenge.html#3d_occupancy_prediction) 
 
-## OpenLane V2
-Flourishing previous [Openlane v2](https://github.com/OpenDriveLab/OpenLane-V2) with more **scene elements and standard definition (SD) map** information.
+## OpenLane V2 Pro Max
+Flourishing Openlane v2 with **Standard Definition (SD) Map and Scene Elements**.
 
 **Quick facts:**
-- Task: given SD map and images as input, build the driving scene on the fly _without_ aid of HD-map. 
+- Task: given SD-map (also known as ADAS map) and scene elements as input, build the driving scene on the fly _without_ aid of HD-map. 
 - Estimated date of release: `Late July, 2023`
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
 - Related work: [TopoNet](https://github.com/OpenDriveLab/TopoNet), [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology) 
