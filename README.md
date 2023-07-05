@@ -1,5 +1,5 @@
 # DriveAGI
-This is **"The One"** project that OpenDrive is committed to contribute to the community, providing some thoughts and general picture of embracing `foundation models` into autonomous agent and system.
+This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
 ## At A Glance
 
