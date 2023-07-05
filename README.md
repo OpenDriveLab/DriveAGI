@@ -17,7 +17,7 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 - Task: given the language prompts as input, predict the trajectory in the scene
 - Origin dataset: `nuScenes`
 - Estimated date of release: `Mid August, 2023`
-- Repo: https://github.com/OpenDriveLab/DriveLM 
+- Repo: https://github.com/OpenDriveLab/DriveLM (TBA)
 
 ## OpenObject
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
@@ -26,7 +26,7 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Task: given the large amount of data, predict the 3D occupancy in the environment. 
 - Origin dataset: `nuPlan`
 - Estimated date of release: `Early August, 2023`
-- Repo: https://github.com/OpenDriveLab/OpenObject 
+- Repo: https://github.com/OpenDriveLab/OpenObject (TBA)
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Detection Challenge 2023](https://opendrivelab.com/AD23Challenge.html#3d_occupancy_prediction) 
 
 ## OpenLane V2 Update
