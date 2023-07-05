@@ -8,7 +8,7 @@ Here are some key components to construct a large foundation model curated for a
 ![overview](assets/overview.png "overview")
 
 ---
-Below we would like to share the latest update from our team on the **`DriveData`** aspect.
+Below we would like to share the latest update from our team on the **`DriveData`** side.
 
 ## DriveLM
 Introducing the First benchmark on **Language Prompt for Driving**.
