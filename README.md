@@ -27,7 +27,7 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Origin dataset: `nuPlan`
 - Estimated date of release: `Early August, 2023`
 - Repo: https://github.com/OpenDriveLab/OpenObject (TBA)
-- Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Detection Challenge 2023](https://opendrivelab.com/AD23Challenge.html#3d_occupancy_prediction) 
+- Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#3d_occupancy_prediction) 
 
 ## OpenLane V2 Update
 Flourishing [Openlane v2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Scene Elements**.
