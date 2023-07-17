@@ -29,8 +29,8 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Repo: https://github.com/OpenDriveLab/OpenObject (TBA)
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3) 
 
-## OpenLane V2 Update
-Flourishing [Openlane v2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Scene Elements**.
+## OpenLane-V2 Update
+Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Scene Elements**.
 
 **Quick facts:**
 - Task: given SD-map (also known as ADAS map) and scene elements as input, build the driving scene on the fly _without_ aid of HD-map. 
