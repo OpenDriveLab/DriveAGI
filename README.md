@@ -16,7 +16,6 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 **Quick facts:**
 - Task: given the language prompts as input, predict the trajectory in the scene
 - Origin dataset: `nuScenes`
-- Estimated date of release: `August 26, 2023`
 - Repo: https://github.com/OpenDriveLab/DriveLM
 
 ## OpenScene
@@ -25,7 +24,6 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 **Quick facts:**
 - Task: given the large amount of data, predict the 3D occupancy in the environment. 
 - Origin dataset: `nuPlan`
-- Estimated date of release: `Early August, 2023`
 - Repo: https://github.com/OpenDriveLab/OpenScene
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3) 
 
@@ -34,7 +32,6 @@ Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **St
 
 **Quick facts:**
 - Task: given SD-map (also known as ADAS map) and scene elements as input, build the driving scene on the fly _without_ aid of HD-map. 
-- Estimated date of release: `Late July, 2023`
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
 - Related work: [TopoNet](https://github.com/OpenDriveLab/TopoNet), [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology) 
 
