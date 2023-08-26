@@ -16,8 +16,8 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 **Quick facts:**
 - Task: given the language prompts as input, predict the trajectory in the scene
 - Origin dataset: `nuScenes`
-- Estimated date of release: `Mid August, 2023`
-- Repo: https://github.com/OpenDriveLab/DriveLM (TBA)
+- Estimated date of release: `August 26, 2023`
+- Repo: https://github.com/OpenDriveLab/DriveLM
 
 ## OpenScene
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
