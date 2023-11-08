@@ -7,6 +7,25 @@ Here are some key components to construct a large foundation model curated for a
 
 ![overview](assets/overview.png "overview")
 
+## DriveData
+
+
+With the continuous maturation and application of autonomous driving technology, a systematic examination of open-source autonomous driving datasets becomes instrumental in fostering the robust evolution of the industry ecosystem. In this survey, we provide a comprehensive analysis of more than 70 papers on the timeline, impact, challenges, and future trends in autonomous driving dataset. More details can be found in our [Autonomous Driving Datasets Survey Page](./Drivedata.md).
+
+> [**Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future**](https://www.researchgate.net/publication/375331218_Open-sourced_Data_Ecosystem_in_Autonomous_Driving_the_Present_and_Future?channel=doi)
+>
+> [Hongyang Li](https://lihongyang.info/)<sup>1</sup>, Yang Li<sup>1</sup>, [Huijie Wang](https://faikit.github.io/)<sup>1</sup>, [Jia Zeng]()<sup>1</sup>, [Pinlong Cai]()<sup>1</sup>, [Dahua Lin]()<sup>1</sup>, [Junchi Yan]()<sup>2</sup>, [Feng Xu]()<sup>3</sup>, [Lu Xiong]()<sup>4</sup>, [Jingdong Wang]()<sup>5</sup>, Futang Zhu<sup>6</sup>, Kai Yan<sup>7</sup>, [Chunjing Xu](https://scholar.google.com/citations?user=-CJ5LkMAAAAJ)<sup>8</sup>, [Tiancai Wang](https://www.wangeniusky.com/)<sup>9</sup>, [Beipeng Mu](https://scholar.google.com/citations?user=GiHhDhkAAAAJ)<sup>10</sup>, [Shaoqing Ren](https://shaoqingren.com/)<sup>11</sup>, [Zhihui Peng](https://github.com/peng-zhihui)<sup>12</sup>, [Yu Qiao](https://scholar.google.com/citations?user=gFtI-8QAAAAJ)<sup>1</sup>
+> 
+> <sup>1</sup> Shanghai AI Lab, <sup>2</sup> Shanghai Jiao Tong University, <sup>3</sup> Fudan University, <sup>4</sup> Tongji University, <sup>5</sup> Baidu, <sup>6</sup> BYD, <sup>7</sup> Changan, <sup>8</sup> Huawei, <sup>9</sup> Megvii Technology, <sup>10</sup> Meituan, <sup>11</sup> Nio Automotive, <sup>12</sup> Agibot
+>
+
+
+![overview](assets/Drivedata_overview.jpg "Drivedata_overview")
+>Current autonomous driving datasets can broadly be categorized into two generations since the 2010s. We define the Impact (y-axis) of a dataset based on sensor configuration, input modality, task category, data scale, ecosystem, etc.
+
+
+![overview](assets/Drivedata_timeline.jpg "Drivedata_timeline")
+
 ---
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
