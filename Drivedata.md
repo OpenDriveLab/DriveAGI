@@ -1401,7 +1401,6 @@ Similarity, etc.
 </table> -->
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
 Open-sourced Data Ecosystem in Autonomous Driving is released under the [MIT license](./LICENSE).
