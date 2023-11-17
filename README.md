@@ -19,6 +19,17 @@ With the continuous maturation and application of autonomous driving technology,
 > <sup>1</sup> Shanghai AI Lab, <sup>2</sup> Shanghai Jiao Tong University, <sup>3</sup> Fudan University, <sup>4</sup> Tongji University, <sup>5</sup> Baidu, <sup>6</sup> BYD, <sup>7</sup> Changan, <sup>8</sup> Huawei, <sup>9</sup> Megvii Technology, <sup>10</sup> Meituan, <sup>11</sup> Nio Automotive, <sup>12</sup> Agibot
 >
 
+## License and Citation
+All assets and code in this repository are under the [MIT license](./LICENSE). If you find this project useful in your research, please consider citing:
+```BibTeX
+@article{hongyang2023datasetsurvey,
+  title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
+  author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai,Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Qian Zhang, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
+  journal = ResearchGate,
+  doi={10.13140/RG.2.2.10945.74088},
+  year={2023}
+}
+```
 
 ![overview](assets/Drivedata_overview.jpg "Drivedata_overview")
 >Current autonomous driving datasets can broadly be categorized into two generations since the 2010s. We define the Impact (y-axis) of a dataset based on sensor configuration, input modality, task category, data scale, ecosystem, etc.
