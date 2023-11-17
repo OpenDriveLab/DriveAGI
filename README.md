@@ -20,7 +20,7 @@ With the continuous maturation and application of autonomous driving technology,
 >
 
 ## License and Citation
-All assets and code in this repository are under the [MIT license](./LICENSE). If you find this project useful in your research, please consider citing:
+All assets and code in this repository are under the [Apache2.0 license](./LICENSE). If you find this project useful in your research, please consider citing:
 ```BibTeX
 @article{hongyang2023datasetsurvey,
   title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
