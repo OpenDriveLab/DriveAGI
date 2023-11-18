@@ -17,9 +17,9 @@ With the continuous maturation and application of autonomous driving technology,
 > - [PDF version](https://opendrivelab.com/Dataset_Survey_Chinese.pdf)
 >
 > ```bib
-> @article{li2023datasetsurvey,
+> @article{li2023_datasetsurvey,
 >   title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
->   author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai, Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
+>   author={Hongyang Li and  Yang Li and  Huijie Wang and  Jia Zeng and Pinlong Cai and  Dahua Lin and  Junchi Yan and  Feng Xu and  Lu Xiong and  Jingdong Wang and  Futang Zhu and  Kai Yan and  Chunjing Xu and Tiancai Wang and Beipeng Mu and  Shaoqing Ren and Zhihui Peng and Yu Qiao},
 >   doi={10.13140/RG.2.2.10945.74088},
 >   year={2023}
 > }
