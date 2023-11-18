@@ -13,6 +13,7 @@ We present comprehensive paper collections, leaderboards, and challenges.
 
 - [Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future](#open-sourced-data-ecosystem-in-autonomous-driving-the-present-and-future)
   - [Table of Contents](#table-of-contents)
+  - [Citation](#citation)
   - [Challenges and Leaderboards](#challenges-and-leaderboards)
   - [Dataset Collection](#dataset-collection)
     - [Perception](#perception)
@@ -22,8 +23,17 @@ We present comprehensive paper collections, leaderboards, and challenges.
     - [Commercial Platforms](#commercial-platforms)
     - [Label Tools](#label-tools) -->
   - [License](#license)
-  - [Citation](#citation)
 
+## Citation
+If you find this project useful in your research, please consider to cite:
+```BibTeX
+@article{li2023datasetsurvey,
+  title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
+  author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai, Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
+  doi={10.13140/RG.2.2.10945.74088},
+  year={2023}
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -1406,18 +1416,6 @@ Similarity, etc.
 ## License
 Open-sourced Data Ecosystem in Autonomous Driving is released under the [MIT license](./LICENSE).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Citation
-If you find this project useful in your research, please consider citing:
-```BibTeX
-@article{li2023datasetsurvey,
-  title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
-  author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai, Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Qian Zhang, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
-  doi={10.13140/RG.2.2.10945.74088},
-  year={2023}
-}
-```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
