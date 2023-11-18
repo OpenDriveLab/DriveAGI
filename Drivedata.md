@@ -2,7 +2,9 @@
 
 # Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future
 
-> **This repo is all you need for Open-sourced Data Ecosystem in Autonomous Driving.** We present comprehensive paper collections, leaderboards, and challenges.
+>  **This repo is all you need for Open-sourced Data Ecosystem in Autonomous Driving.**
+
+We present comprehensive paper collections, leaderboards, and challenges.
 
 <!-- ![](https://img.shields.io/badge/Record-137-673ab7.svg)
 ![](https://img.shields.io/badge/License-MIT-lightgrey.svg) -->
@@ -21,7 +23,6 @@
     - [Label Tools](#label-tools) -->
   - [License](#license)
   - [Citation](#citation)
-  - [Contact](#contact)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -1410,10 +1411,9 @@ Open-sourced Data Ecosystem in Autonomous Driving is released under the [MIT lic
 ## Citation
 If you find this project useful in your research, please consider citing:
 ```BibTeX
-@article{hongyang2023datasetsurvey,
+@article{li2023datasetsurvey,
   title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
-  author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai,Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Qian Zhang, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
-  journal = ResearchGate,
+  author={Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Pinlong Cai, Dahua Lin, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Qian Zhang, Chunjing Xu, Tiancai Wang, Beipeng Mu, Shaoqing Ren, Zhihui Peng, Yu Qiao},
   doi={10.13140/RG.2.2.10945.74088},
   year={2023}
 }
@@ -1421,7 +1421,3 @@ If you find this project useful in your research, please consider citing:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Contact
-Primary contact: `lihongyang@pjlab.org.cn`. You can also contact: `liyang@pjlab.org.cn`.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
