@@ -826,6 +826,20 @@ Odometry, Object, Tracking, Road, Semantics</td>
 </tr>
 
 <tr align="middle">
+      <td><a href="https://zod.zenseact.com/" target="_blank" 
+      title="Homepage">ZOD</a></td>  	  
+      <td> 2023 </td>
+    	<td> 1473 </td>
+    	<td> 8.2  </td>
+  	  <td> EU   </td>
+    	<td> 360° </td>
+      <td> ✓   </td>
+    	<td> GPS & IMU & CAN-bus </td>
+      <td>3D BBox & 2D Seg </td>
+      <td><a href="https://arxiv.org/abs/2305.02008" target="_blank" title="Homepage">Link</a></td>
+</tr>
+
+<tr align="middle">
       <td><a href="https://www.nuscenes.org/" target="_blank" 
       title="Homepage">nuScenes</a></td>  	  
       <td> 2019 </td>
@@ -1160,10 +1174,10 @@ Odometry, Object, Tracking, Road, Semantics</td>
 </tr>
 
 <tr align="middle">
-  	  <td rowspan=7 > Motion Prediction</td>
-    	<td  rowspan=7> Surrounding Traffic States </td>
-  	  <td  rowspan=7 > Spatiotemporal Trajectories of Single/Multiple Vehicle(s) </td>
-    	<td  rowspan=7 > Displacement Error </td>
+  	  <td rowspan=9 > Motion Prediction</td>
+    	<td  rowspan=9> Surrounding Traffic States </td>
+  	  <td  rowspan=9 > Spatiotemporal Trajectories of Single/Multiple Vehicle(s) </td>
+    	<td  rowspan=9 > Displacement Error </td>
       <td><a href="https://www.argoverse.org" target="_blank" 
       title="Homepage">Argoverse</a></td> 
 </tr>
@@ -1182,7 +1196,11 @@ Odometry, Object, Tracking, Road, Semantics</td>
       <td><a href="https://github.com/interaction-dataset/interaction-dataset" target="_blank" 
       title="Homepage">Interaction</a></td>  
 </tr>
-
+<tr align="middle"> </tr>
+<tr align="middle">
+      <td><a href="https://tum-cps.pages.gitlab.lrz.de/mona-dataset/" target="_blank" 
+      title="Homepage">MONA</a></td>  
+</tr>
 <tr align="middle">
   	  <td rowspan=7 > Trajectory Planning</td>
     	<td  rowspan=7> Motion States for Ego Vehicles, Scenario Cognition and Prediction </td>
