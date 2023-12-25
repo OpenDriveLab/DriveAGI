@@ -1258,3 +1258,9 @@ Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **St
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
 - Related work: [TopoNet](https://github.com/OpenDriveLab/TopoNet), [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology) 
 
+## Collaborating Organizations
+
+
+![overview](assets/Affiliation.png "Affiliation")
+
+
