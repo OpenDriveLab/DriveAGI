@@ -118,7 +118,7 @@ Challenges">Waymo Open Dataset Challenges</a></td>
   </tr>
 <tr align="middle"> </tr>
 <tr align="middle">
-       <td>Predirction / Interaction Prediction</td>
+       <td>Prediction / Interaction Prediction</td>
 </tr>
 <tr align="middle"> </tr>
 <tr align="middle">
