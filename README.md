@@ -1,6 +1,9 @@
 # DriveAGI
 This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
+## NEWS
+- **`2024/01/24`** We are happy to announce some update to the DriveData and would like to thank John Lambert, Klemens Esterle, Daniel Bogdoll from the public community for their advice to improve the manuscript.
+
 ## At A Glance
 
 Here are some key components to construct a large foundation model curated for an autonomous system.
