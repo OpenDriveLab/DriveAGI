@@ -1223,13 +1223,14 @@ If this work is helpful for your research, please consider citing the following 
 <summary>Clicks to expand</summary>
 
 > **Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future**
-> - [ARXIV](https://arxiv.org/abs/2312.03408)
-> - [PDF version](https://opendrivelab.com/Dataset_Survey_Chinese.pdf)
+> - [English version](https://arxiv.org/abs/2312.03408)
+> - [Chinese version](https://opendrivelab.com/Dataset_Survey_Chinese_V2.pdf)
 >
 > ```bib
 > @misc{li2023opensourced,
 >       title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future}, 
->       author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Pinlong Cai and Huilin Xu and Dahua Lin and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Kai Yan and Chunjing Xu and Tiancai Wang and > Beipeng Mu and Shaoqing Ren and Zhihui Peng and Yu Qiao},
+>       author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Kai
+>       Yan and Chunjing Xu and Tiancai Wang and Fei Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
 >       year={2023},
 >       eprint={2312.03408},
 >       archivePrefix={arXiv},
