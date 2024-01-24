@@ -17,8 +17,8 @@ Here are some key components to construct a large foundation model curated for a
 With the continuous maturation and application of autonomous driving technology, a systematic examination of open-source autonomous driving datasets becomes instrumental in fostering the robust evolution of the industry ecosystem. In this survey, we provide a comprehensive analysis of more than 70 papers on the timeline, impact, challenges, and future trends in autonomous driving dataset.
 
 > **Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future**
-> - [English version](https://arxiv.org/abs/2312.03408)
-> - [Chinese version](https://opendrivelab.com/Dataset_Survey_Chinese_V2.pdf)
+> - [English Version](https://arxiv.org/abs/2312.03408)
+> - [Chinese Version](https://opendrivelab.com/Dataset_Survey_Chinese_V2.pdf)
 >
 > ```bib
 > @misc{li2023opensourced,
