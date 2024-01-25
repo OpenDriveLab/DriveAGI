@@ -1,6 +1,10 @@
 # DriveAGI
 This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
+## NEWS
+**`2024/01/24`**
+<!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
+- We are excited to announce some update to this work and would like to thank John Lambert, Klemens Esterle from the public community for their advice to improve the manuscript.
 ## At A Glance
 
 Here are some key components to construct a large foundation model curated for an autonomous system.
@@ -13,19 +17,21 @@ Here are some key components to construct a large foundation model curated for a
 With the continuous maturation and application of autonomous driving technology, a systematic examination of open-source autonomous driving datasets becomes instrumental in fostering the robust evolution of the industry ecosystem. In this survey, we provide a comprehensive analysis of more than 70 papers on the timeline, impact, challenges, and future trends in autonomous driving dataset.
 
 > **Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future**
-> - [English version](https://arxiv.org/abs/2312.03408)
-> - [Chinese version](https://opendrivelab.com/Dataset_Survey_Chinese.pdf)
+> - [English Version](https://arxiv.org/abs/2312.03408)
+> - [Chinese Version](https://opendrivelab.com/Dataset_Survey_Chinese_V2.pdf)
 >
 > ```bib
 > @misc{li2023opensourced,
 >       title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future}, 
->       author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Kai Yan and Chunjing Xu and Tiancai Wang and Fei >       Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
+>       author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Kai
+>       Yan and Chunjing Xu and Tiancai Wang and Fei Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
 >       year={2023},
 >       eprint={2312.03408},
 >       archivePrefix={arXiv},
 >       primaryClass={cs.CV}
 > }
 > ```
+
 <!-- > [Hongyang Li](https://lihongyang.info/)<sup>1</sup>, Yang Li<sup>1</sup>, [Huijie Wang](https://faikit.github.io/)<sup>1</sup>, [Jia Zeng](https://scholar.google.com/citations?user=kYrUfMoAAAAJ)<sup>1</sup>, Pinlong Cai<sup>1</sup>, Dahua Lin<sup>1</sup>, Junchi Yan<sup>2</sup>, Feng Xu<sup>3</sup>, Lu Xiong<sup>4</sup>, Jingdong Wang<sup>5</sup>, Futang Zhu<sup>6</sup>, Kai Yan<sup>7</sup>, Chunjing Xu<sup>8</sup>, Tiancai Wang<sup>9</sup>, Beipeng Mu<sup>10</sup>, Shaoqing Ren<sup>11</sup>, Zhihui Peng<sup>12</sup>, Yu Qiao<sup>1</sup>
 > 
 > <sup>1</sup> Shanghai AI Lab, <sup>2</sup> Shanghai Jiao Tong University, <sup>3</sup> Fudan University, <sup>4</sup> Tongji University, <sup>5</sup> Baidu, <sup>6</sup> BYD, <sup>7</sup> Changan, <sup>8</sup> Huawei, <sup>9</sup> Megvii Technology, <sup>10</sup> Meituan, <sup>11</sup> Nio Automotive, <sup>12</sup> Agibot
@@ -33,7 +39,6 @@ With the continuous maturation and application of autonomous driving technology,
 
 ![overview](assets/Drivedata_overview.jpg "Drivedata_overview")
 >Current autonomous driving datasets can broadly be categorized into two generations since the 2010s. We define the Impact (y-axis) of a dataset based on sensor configuration, input modality, task category, data scale, ecosystem, etc.
-
 
 ![overview](assets/Drivedata_timeline.jpg "Drivedata_timeline")
 
