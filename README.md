@@ -1246,7 +1246,7 @@ https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFn
 
 **Quick facts:**
 - Task: large-scale video prediction for driving scenes
-- Data Source: `YouTube` with careful collection and filtering process
+- Data Source: `YouTube`, with careful collection and filtering process
 - Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries
 - Related Work: [GenAD]()
 
