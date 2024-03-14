@@ -2,6 +2,9 @@
 This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
 ## NEWS
+**`2024/03/15`** 
+- We released OpenDV-YouTube, a large-scale driving video dataset, for [GenAD]() project.
+
 **`2024/01/24`**
 <!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
 - We are excited to announce some update to this work and would like to thank John Lambert, Klemens Esterle from the public community for their advice to improve the manuscript.
@@ -1236,6 +1239,17 @@ Odometry, Object, Tracking, Road, Semantics</td>
 
 ---
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
+
+## OpenDV-YouTube
+The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset. Check out the complete video list here:
+https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0
+
+**Quick facts:**
+- Task: large-scale video prediction for driving scenes
+- Data Source: `YouTube`, with careful collection and filtering process
+- Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries
+- Related Work: [GenAD]()
+
 
 ## DriveLM
 Introducing the First benchmark on **Language Prompt for Driving**.
