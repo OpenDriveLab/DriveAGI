@@ -1241,7 +1241,7 @@ Odometry, Object, Tracking, Road, Semantics</td>
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
 ## OpenDV-YouTube
-The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset. Check the complete video list here:
+The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset. Check out the complete video list here:
 https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0
 
 **Quick facts:**
