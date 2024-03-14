@@ -2,7 +2,7 @@
 This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
 ## NEWS
-**`2024/03/14`** 
+**`2024/03/15`** 
 - We released OpenDV-YouTube, a large-scale driving video dataset, for [GenAD]() project.
 
 **`2024/01/24`**
