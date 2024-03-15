@@ -1241,14 +1241,14 @@ Odometry, Object, Tracking, Road, Semantics</td>
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
 ## OpenDV-YouTube
-The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset. Check out the complete video list here:
-https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0
+The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
 **Quick facts:**
-- Task: large-scale video prediction for driving scenes
-- Data Source: `YouTube`, with careful collection and filtering process
-- Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries
-- Related Work: [GenAD](https://arxiv.org/abs/2403.09630)
+- Task: large-scale video prediction for driving scenes.
+- Data source: `YouTube`, with careful collection and filtering process.
+- Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries.
+- Video list (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
+- Related work: [GenAD](https://arxiv.org/abs/2403.09630)
 
 
 ## DriveLM
@@ -1258,6 +1258,8 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 - Task: given the language prompts as input, predict the trajectory in the scene
 - Origin dataset: `nuScenes`
 - Repo: https://github.com/OpenDriveLab/DriveLM
+- Related work: [DriveLM](https://arxiv.org/abs/2312.14150)
+- Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
 
 ## OpenScene
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
@@ -1266,15 +1268,18 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Task: given the large amount of data, predict the 3D occupancy in the environment. 
 - Origin dataset: `nuPlan`
 - Repo: https://github.com/OpenDriveLab/OpenScene
-- Related work: [OccNet](https://github.com/OpenDriveLab/OccNet), [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3) 
+- Related work: [OccNet](https://github.com/OpenDriveLab/OccNet)
+- Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
+
 
 ## OpenLane-V2 Update
-Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Scene Elements**.
+Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Map Elements**.
 
 **Quick facts:**
-- Task: given SD-map (also known as ADAS map) and scene elements as input, build the driving scene on the fly _without_ aid of HD-map. 
+- Task: given multi-view images and SD-map (also known as ADAS map) as input, build the driving scene on the fly _without_ the aid of HD-map. 
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
-- Related work: [TopoNet](https://github.com/OpenDriveLab/TopoNet), [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology) 
+- Related work: [OpenLane-V2](https://openreview.net/forum?id=OMOOO3ls6g), [TopoNet](https://github.com/OpenDriveLab/TopoNet), [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet)
+- Related challenge: [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology), [Mapless Driving AGC Challenge 2024](https://opendrivelab.com/challenge2024/#mapless_driving)
 
 
 
