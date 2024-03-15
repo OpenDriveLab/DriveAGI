@@ -3,7 +3,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 
 ## NEWS
 **`2024/03/15`** 
-- We released OpenDV-YouTube, a large-scale driving video dataset, for [GenAD]() project.
+- We released OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project.
 
 **`2024/01/24`**
 <!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
@@ -1248,7 +1248,7 @@ https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFn
 - Task: large-scale video prediction for driving scenes
 - Data Source: `YouTube`, with careful collection and filtering process
 - Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries
-- Related Work: [GenAD]()
+- Related Work: [GenAD](https://arxiv.org/abs/2403.09630)
 
 
 ## DriveLM
