@@ -1256,7 +1256,7 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 
 **Quick facts:**
 - Task: given the language prompts as input, predict the trajectory in the scene
-- Origin dataset: `nuScenes`
+- Origin dataset: `nuScenes`, `CARLA (To be released)`
 - Repo: https://github.com/OpenDriveLab/DriveLM, https://github.com/OpenDriveLab/ELM
 - Related work: [DriveLM](https://arxiv.org/abs/2312.14150), [ELM](https://arxiv.org/abs/2403.04593)
 - Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
