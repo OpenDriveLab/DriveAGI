@@ -14,6 +14,18 @@ Here are some key components to construct a large foundation model curated for a
 
 ![overview](assets/overview.png "overview")
 
+## Table of Contents
+- [At A Glance](#at-a-glance)
+- [DriveData](#drivedata)
+  - [Abstract](#abstract)
+  - [Related Work Collection](#related-work-collection)
+- [Latest Update on the DriveData](#latest-update-on-the-drivedata)
+  - [OpenDV-YouTube](#opendv-youtube)
+  - [DriveLM](#drivelm)
+  - [OpenScene](#openscene)
+  - [OpenLane-V2 Update](#openlanev2)
+
+
 ## DriveData
 
 ### Abstract
@@ -1237,10 +1249,11 @@ Odometry, Object, Tracking, Road, Semantics</td>
 
 
 
----
+## Latest Update on the DriveData
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
-## OpenDV-YouTube
+### <span id="opendv-youtube"> OpenDV-YouTube</span>
+
 The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
 **Quick facts:**
@@ -1251,7 +1264,7 @@ The largest **Driving Video** dataset to date, containing more than **1700 hours
 - Related work: [GenAD](https://arxiv.org/abs/2403.09630)
 
 
-## DriveLM
+### DriveLM
 Introducing the First benchmark on **Language Prompt for Driving**.
 
 **Quick facts:**
@@ -1261,7 +1274,7 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 - Related work: [DriveLM](https://arxiv.org/abs/2312.14150), [ELM](https://arxiv.org/abs/2403.04593)
 - Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
 
-## OpenScene
+### OpenScene
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
 
 **Quick facts:**
@@ -1271,8 +1284,7 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet)
 - Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
 
-
-## OpenLane-V2 Update
+### <span id="openlanev2">OpenLane-V2 Update</span>
 Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Map Elements**.
 
 **Quick facts:**
