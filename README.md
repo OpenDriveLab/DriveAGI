@@ -1,9 +1,19 @@
 # DriveAGI
 This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com/) is committed to contribute to the community, providing some thought and general picture of how to embrace `foundation models` into autonomous driving.
 
+## Table of Contents
+- [NEWS](#news)
+- [At A Glance](#at-a-glance)
+- [OpenDV-YouTube](#opendv-youtube)
+- [DriveData Survey](#drivedata-survey)
+  - [Abstract](#abstract)
+  - [Related Work Collection](#related-work-collection)
+- [DriveLM](#drivelm)
+- [OpenScene](#openscene)
+- [OpenLane-V2 Update](#openlane-v2-update)
 ## NEWS
 **`2024/03/15`** 
-- We released OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project.
+- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Downloading and processing script, as well as language annotation file, will be released next week.
 
 **`2024/01/24`**
 <!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
@@ -14,19 +24,28 @@ Here are some key components to construct a large foundation model curated for a
 
 ![overview](assets/overview.png "overview")
 
-## Table of Contents
-- [At A Glance](#at-a-glance)
-- [DriveData](#drivedata)
-  - [Abstract](#abstract)
-  - [Related Work Collection](#related-work-collection)
-- [Latest Update on the DriveData](#latest-update-on-the-drivedata)
-  - [OpenDV-YouTube](#opendv-youtube)
-  - [DriveLM](#drivelm)
-  - [OpenScene](#openscene)
-  - [OpenLane-V2 Update](#openlanev2)
+
+Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
 
-## DriveData
+## OpenDV-YouTube
+The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
+- Complete Video list (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
+  - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
+  - Therefore, we process them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
+- Downloading and processing script: will be released this week
+- Language annotation for OpenDV-YouTube: will be released this week
+
+
+**Quick facts:**
+- Task: large-scale video prediction for driving scenes.
+- Data source: `YouTube`, with careful collection and filtering process.
+- Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries.
+- Related work: [GenAD](https://arxiv.org/abs/2403.09630)
+- `Note`: Annotations for other public datasets in OpenDV-2K will not be released since we use and annotate randomly sampled data (video sequences) from these datasets, which are incomplete and hard to trace back to their origins (i.e., file name). Nevertheless, it's easy to reproduce the collection and annotation process on your own following [our paper]((https://arxiv.org/abs/2403.09630)).
+
+
+## DriveData Survey
 
 ### Abstract
 With the continuous maturation and application of autonomous driving technology, a systematic examination of open-source autonomous driving datasets becomes instrumental in fostering the robust evolution of the industry ecosystem. In this survey, we provide a comprehensive analysis of more than 70 papers on the timeline, impact, challenges, and future trends in autonomous driving dataset.
@@ -1249,22 +1268,11 @@ Odometry, Object, Tracking, Road, Semantics</td>
 
 
 
-## Latest Update on the DriveData
+---
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
-### <span id="opendv-youtube"> OpenDV-YouTube</span>
 
-The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
-
-**Quick facts:**
-- Task: large-scale video prediction for driving scenes.
-- Data source: `YouTube`, with careful collection and filtering process.
-- Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries.
-- Video list (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
-- Related work: [GenAD](https://arxiv.org/abs/2403.09630)
-
-
-### DriveLM
+## DriveLM
 Introducing the First benchmark on **Language Prompt for Driving**.
 
 **Quick facts:**
@@ -1274,7 +1282,7 @@ Introducing the First benchmark on **Language Prompt for Driving**.
 - Related work: [DriveLM](https://arxiv.org/abs/2312.14150), [ELM](https://arxiv.org/abs/2403.04593)
 - Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
 
-### OpenScene
+## OpenScene
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
 
 **Quick facts:**
@@ -1284,7 +1292,8 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet)
 - Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
 
-### <span id="openlanev2">OpenLane-V2 Update</span>
+
+## OpenLane-V2 Update
 Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Map Elements**.
 
 **Quick facts:**
