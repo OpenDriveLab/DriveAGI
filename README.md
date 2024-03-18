@@ -31,11 +31,11 @@ Below we would like to share the latest update from our team on the **`DriveData
 ## OpenDV-YouTube
 ![opendv](assets/opendv_examples.png)
 The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
-- Complete Video list (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
+- **Complete Video list** (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
   - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
   - Therefore, we process them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
-- Downloading and processing script: will be released this week
-- Language annotation for OpenDV-YouTube: will be released this week
+- **Downloading and processing script**: will be released this week
+- **Language annotation for OpenDV-YouTube**: will be released this week
 
 
 **Quick facts:**
