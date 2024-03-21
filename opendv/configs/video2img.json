@@ -1,0 +1,10 @@
+{
+    "video_root": "OpenDV-YouTube/videos",
+    "train_img_root": "OpenDV-YouTube/full_images",
+    "val_img_root": "OpenDV-YouTube/val_images",
+    "meta_info": "meta/OpenDV-YouTube.json",
+    "num_workers": 90,
+    "frame_rate": 10,
+    "exception_file": "vid2img_exceptions.txt",
+    "finish_log": "vid2img_finished.txt"
+}
