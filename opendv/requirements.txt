@@ -1,0 +1,6 @@
+git+https://github.com/ytdl-org/youtube-dl
+
+opencv-python
+decord
+tqdm
+pandas
