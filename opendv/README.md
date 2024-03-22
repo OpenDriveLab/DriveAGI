@@ -32,6 +32,8 @@ Now you can run the following command to download the raw video data.
 python scripts/youtube_download.py >> download_output.txt
 ```
 
+The download will take about $2000/\mathrm{NUM_WORKERS}$ hours, also depending on your network condition. The data will take about **3TB** of disk space.
+
 ## Data Preprocessing (Video-to-Image)
 
 When the download is finished, you can first set the configures in `configs/video2img.json` to those you expect. The script also **supports multi-threading processing**, so you can set the `num_workers` to a proper value according to your hardware condition.
@@ -43,3 +45,5 @@ Then, you can run the following command to preprocess the raw video data.
 ```cmd
 python scripts/video2img.py >> vid2img_output.txt
 ```
+
+The preprocessing will take about $8000/\mathrm{NUM_WORKERS}$ hours, resulting in about **25TB** of images.
