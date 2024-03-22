@@ -13,7 +13,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - [OpenLane-V2 Update](#openlane-v2-update)
 ## NEWS
 **`2024/03/15`** 
-- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Downloading and processing script, as well as language annotation file, will be released next week.
+- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Data downloading and processing script, as well as language annotations, will be released next week. Stay tuned.
 
 **`2024/01/24`**
 <!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
@@ -34,7 +34,7 @@ The largest **Driving Video** dataset to date, containing more than **1700 hours
 - **Complete Video list** (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
   - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
   - Therefore, we process them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
-- **Downloading and processing script**: will be released this week
+- **Data downloading and processing script**: will be released this week
 - **Language annotation for OpenDV-YouTube**: will be released this week
 
 
