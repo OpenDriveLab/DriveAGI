@@ -32,7 +32,7 @@ Now you can run the following command to download the raw video data.
 python scripts/youtube_download.py >> download_output.txt
 ```
 
-The download will take about $2000/\mathrm{NUM_WORKERS}$ hours, also depending on your network condition. The data will take about **3TB** of disk space.
+The download will take about $2000/\mathrm{NUM_{WORKERS}}$ hours, also depending on your network condition. The data will take about **3TB** of disk space.
 
 ## Data Preprocessing (Video-to-Image)
 
@@ -46,4 +46,35 @@ Then, you can run the following command to preprocess the raw video data.
 python scripts/video2img.py >> vid2img_output.txt
 ```
 
-The preprocessing will take about $8000/\mathrm{NUM_WORKERS}$ hours, resulting in about **25TB** of images.
+The preprocessing will take about $8000/\mathrm{NUM_{WORKERS}}$ hours, resulting in about **25TB** of images.
+
+## Annotation Preparation
+
+The full annotation data, including **commands** and **contexts** of video clips, is available at <a href="https://huggingface.co/datasets/OpenDriveLab/OpenDV-YouTube-Language" target="_blank">OpenDV-YouTube-Language</a>. The files are in `json` format, with total size of about **14GB**.
+
+The annotation data is aligned with the structure of the preprocessed data. You can use the following code to load in annotations respectively.
+
+```python
+import json
+
+# for train
+full_annos = []
+for split_id in range(10):
+  split = json.load(open("10hz_YouTube_train_split{}.json".format(str(split_id)), "r"))
+  full_annos.extend(split)
+
+# for val
+val_annos = json.load(open("10hz_YouTube_val.json", "r"))
+```
+
+Annotations will be loaded in `full_annos` as a list where each element contains annotations for one video clip. All elements in the list are dictionaries of the following structure.
+
+```
+{
+  "cmd": <int> -- command, i.e. the command of the ego vehicle in the video clip.
+  "blip": <str> -- context, i.e. the BLIP description of the center frame in the video clip.
+  "folder": <str> -- the relative path from the processed OpenDV-YouTube dataset root to the image folder of the video clip.
+  "first_frame": <str> -- the filename of the first frame in the clip. Note that this file is included in the video clip.
+  "last_frame": <str> -- the filename of the last frame in the clip. Note that this file is included in the video clip.
+}
+```
