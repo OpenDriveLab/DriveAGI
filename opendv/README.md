@@ -18,7 +18,7 @@ Then, run the following command to preprocess the meta data. The default value f
 python scripts/meta_preprocess.py -i CSV_PATH -o JSON_PATH
 ```
 
-## Raw Data Download
+## Raw Data Download (Raw videos)
 
 To download the raw data from YouTube, you should first change the configures in `configs/download.json`. 
 
@@ -34,7 +34,7 @@ python scripts/youtube_download.py >> download_output.txt
 
 The download will take about $2000/\mathrm{NUM_{WORKERS}}$ hours, also depending on your network condition. The data will take about **3TB** of disk space.
 
-## Data Preprocessing (Video-to-Image)
+## Data Preprocessing (Converting videos to images)
 
 When the download is finished, you can first set the configures in `configs/video2img.json` to those you expect. The script also **supports multi-threading processing**, so you can set the `num_workers` to a proper value according to your hardware condition.
 
@@ -48,7 +48,7 @@ python scripts/video2img.py >> vid2img_output.txt
 
 The preprocessing will take about $8000/\mathrm{NUM_{WORKERS}}$ hours, resulting in about **25TB** of images.
 
-## Annotation Preparation
+## Language Annotations
 
 The full annotation data, including **commands** and **contexts** of video clips, is available at <a href="https://huggingface.co/datasets/OpenDriveLab/OpenDV-YouTube-Language" target="_blank">OpenDV-YouTube-Language</a>. The files are in `json` format, with total size of about **14GB**.
 
