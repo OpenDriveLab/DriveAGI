@@ -34,8 +34,8 @@ The largest **Driving Video** dataset to date, containing more than **1700 hours
 - **Complete Video list** (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
   - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
   - Therefore, we process them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
-- **Data downloading and processing script**: will be released this week
-- **Language annotation for OpenDV-YouTube**: will be released this week
+- **Downloading and processing script**: Please refer to [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
+- **Language annotation for OpenDV-YouTube**: You can download full annotations for OpenDV-YouTube at [OpenDV-YouTube-Language](https://huggingface.co/datasets/OpenDriveLab/OpenDV-YouTube-Language).
 
 
 **Quick facts:**

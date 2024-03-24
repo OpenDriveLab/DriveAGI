@@ -1,6 +1,12 @@
 # full OpenDV-YouTube dataset
 meta/
 OpenDV-YouTube/
+annos
+
+# logs
+*exceptions.txt
+*output.txt
+*finished.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
