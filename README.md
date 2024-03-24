@@ -12,12 +12,12 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - [OpenScene](#openscene)
 - [OpenLane-V2 Update](#openlane-v2-update)
 ## NEWS
-**`2024/03/15`** 
-- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Data downloading and processing script, as well as language annotations, will be released next week. Stay tuned.
+**`2024/03/24`** `OpenDV-YouTube Update:` **Full suite of toolkits for OpenDV-YouTube** is now available, including data downloading and processing scripts, as well as language annotations. Please refer to [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
+
+**`2024/03/15`** We released the complete video list of `OpenDV-YouTube`, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Data downloading and processing script, as well as language annotations, will be released next week. Stay tuned.
 
 **`2024/01/24`**
-<!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
-- We are excited to announce some update to this work and would like to thank John Lambert, Klemens Esterle from the public community for their advice to improve the manuscript.
+We are excited to announce some update to [our survey](#drivedata-survey) and would like to thank John Lambert, Klemens Esterle from the public community for their advice to improve the manuscript.
 ## At A Glance
 
 Here are some key components to construct a large foundation model curated for an autonomous system.
