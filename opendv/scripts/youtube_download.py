@@ -83,7 +83,11 @@ if __name__ == '__main__':
     configs = EasyDict(json.load(open(args.config, "r")))
     video_list = json.load(open(configs.pop("video_list"), "r"))
     if not os.path.exists(configs.root):
+<<<<<<< HEAD
         os.makedirs(configs.root, exist_ok=True)
+=======
+        os.makedirs(configs.root)
+>>>>>>> main
 
     multiple_download(video_list, configs)
     check_status(video_list, configs)

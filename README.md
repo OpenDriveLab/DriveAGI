@@ -13,7 +13,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - [OpenLane-V2 Update](#openlane-v2-update)
 ## NEWS
 **`2024/03/15`** 
-- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Downloading and processing script, as well as language annotation file, will be released next week.
+- We released the complete video list of OpenDV-YouTube, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Data downloading and processing script, as well as language annotations, will be released next week. Stay tuned.
 
 **`2024/01/24`**
 <!-- > - We present [ad-dataset website](https://orangegk.github.io/AutonomousDrivingDataset/#/) that provides such an overview for more than 150 datasets and thank Daniel Bogdoll for his contribution on that.> -->
