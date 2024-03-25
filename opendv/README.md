@@ -32,7 +32,9 @@ Now you can run the following command to download the raw video data.
 python scripts/youtube_download.py >> download_output.txt
 ```
 
-The download will take about $2000/\mathrm{NUM_{WORKERS}}$ hours, also depending on your network condition. The data will take about **3TB** of disk space.
+The download will take about $2000/\mathrm{NUM_{WORKERS}}$ hours, which may vary your network condition. 
+The default $\mathrm{NUM_{WORKERS}} = 90$, and you can adjust it in [config](https://github.com/OpenDriveLab/DriveAGI/blob/496efaf513e72e787ff09e0157e864d08183ba2d/opendv/configs/download.json#L5).
+The data will take about **3TB** of disk space.
 
 ## Data Preprocessing (Converting videos to images)
 
@@ -46,7 +48,9 @@ Then, you can run the following command to preprocess the raw video data.
 python scripts/video2img.py >> vid2img_output.txt
 ```
 
-The preprocessing will take about $8000/\mathrm{NUM_{WORKERS}}$ hours, resulting in about **25TB** of images.
+The preprocessing will take about $8000/\mathrm{NUM_{WORKERS}}$ hours, which may vary your network condition. 
+The default $\mathrm{NUM_{WORKERS}} = 90$, and you can adjust it in [config](https://github.com/OpenDriveLab/DriveAGI/blob/496efaf513e72e787ff09e0157e864d08183ba2d/opendv/configs/video2img.json#L6).
+Resulting images will take about **25TB** of disk space.
 
 ## Language Annotations
 
