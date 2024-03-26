@@ -31,6 +31,7 @@ def collect_unfinished_videos(config, micro=False):
         meta_infos = meta_infos[:3]
     if os.path.exists(configs.finish_log):
         finish_log = set(open(configs.finish_log, "r").readlines())
+        finish_log = {x.strip() for x in finish_log}
     else:
         finish_log = set()
     
