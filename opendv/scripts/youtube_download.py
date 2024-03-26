@@ -15,7 +15,6 @@ sys.path.append(root_dir)
 from utils.easydict import EasyDict
 from utils.download import youtuber_formatize, POSSIBLE_EXTS
 
-DEFAULT_FORMAT_SELECTION = 'bestvideo[height>=720,height<=1080]/best[height>=720,height<=1080]/bestvideo[height>=720]/best[height>=720]'
 CONFIGS = dict()
 
 def single_download(vid_info):
@@ -30,16 +29,26 @@ def single_download(vid_info):
             return
     if not os.path.exists(path):
         os.makedirs(path, exist_ok=True)
-    os.system(f"youtube-dl -f '{CONFIGS.format}' -o '{path}/{filename}.%(ext)s' {url}")
+    
+    try:
+        ret = os.system(f"{CONFIGS.method} -f '{CONFIGS.format}' -o '{path}/{filename}.%(ext)s' {url}")
+        if ret != 0:
+            raise Exception("ERROR: Video unavailable or network error.")
+    except Exception as e:
+        with open(CONFIGS.exception_file, "a") as f:
+            f.write("Error downloading video [{}]: {}\n".format(filename, e))
+        return
     
 
 def multiple_download(video_list, configs):
     global CONFIGS
 
     video_count = len(video_list)
-    CONFIGS["format"] = configs.get("format", DEFAULT_FORMAT_SELECTION)
+    CONFIGS["method"] = configs["method"]
+    assert CONFIGS["method"] in ["youtube-dl", "yt-dlp"], "Only support `youtube-dl` and `yt-dlp`."
+    CONFIGS["format"] = configs["format"] if configs["method"] == "youtube-dl" else configs["format_for_ytdlp"]
     CONFIGS["root"] = configs.root
-    CONFIGS = EasyDict(configs)
+    CONFIGS = EasyDict(CONFIGS)
     finished = 0
     with Pool(configs.num_workers) as p:
         current_time = time.perf_counter()
@@ -57,8 +66,9 @@ def check_status(video_list, configs):
         return
 
     print("Checking download status...")
-    with open(configs.exception_file, "w") as f:
-        f.write("Checking download status...\n")
+    with open(configs.exception_file, "a") as f:
+        f.write("\n\nChecking download status...\n")
+
     for vid_info in tqdm(video_list):
         exists = False
         path = os.path.join(configs.root, youtuber_formatize(vid_info["youtuber"]))
@@ -81,6 +91,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     configs = EasyDict(json.load(open(args.config, "r")))
+    with open(configs.exception_file, "w") as f:
+        f.write("")
+
     video_list = json.load(open(configs.pop("video_list"), "r"))
     if not os.path.exists(configs.root):
         os.makedirs(configs.root, exist_ok=True)

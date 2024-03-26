@@ -45,7 +45,8 @@ def extract_frames(video_info):
 
         if finish_log is not None:
             with open(finish_log, "a") as f:
-                f.write(video_info.get("video_id", video_path.split("/")[-1]), "\n")
+                f.write(video_info.get("video_id", video_path.split("/")[-1]))
+                f.write("\n")
         
     except Exception as e:
         exceptions = dict()
@@ -54,6 +55,8 @@ def extract_frames(video_info):
         exceptions["action"] = "skipped"
         exceptions["details"] = traceback.format_exc()
         json.dump(exceptions, open(exception_file, "a"), indent=4)
+        with open(exception_file, "a") as f:
+            f.write(",\n")
 
         traceback.print_exc()
 
