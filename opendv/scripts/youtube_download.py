@@ -15,7 +15,6 @@ sys.path.append(root_dir)
 from utils.easydict import EasyDict
 from utils.download import youtuber_formatize, POSSIBLE_EXTS
 
-DEFAULT_FORMAT_SELECTION = 'bestvideo[height>=720,height<=1080]/best[height>=720,height<=1080]/bestvideo[height>=720]/best[height>=720]'
 CONFIGS = dict()
 
 def single_download(vid_info):
@@ -32,7 +31,7 @@ def single_download(vid_info):
         os.makedirs(path, exist_ok=True)
     
     try:
-        ret = os.system(f"youtube-dl -f '{CONFIGS.format}' -o '{path}/{filename}.%(ext)s' {url}")
+        ret = os.system(f"{CONFIGS.method} -f '{CONFIGS.format}' -o '{path}/{filename}.%(ext)s' {url}")
         if ret != 0:
             raise Exception("ERROR: Video unavailable or network error.")
     except Exception as e:
@@ -45,9 +44,11 @@ def multiple_download(video_list, configs):
     global CONFIGS
 
     video_count = len(video_list)
-    CONFIGS["format"] = configs.get("format", DEFAULT_FORMAT_SELECTION)
+    CONFIGS["method"] = configs["method"]
+    assert CONFIGS["method"] in ["youtube-dl", "yt-dlp"], "Only support `youtube-dl` and `yt-dlp`."
+    CONFIGS["format"] = configs["format"] if configs["method"] == "youtube-dl" else configs["format_for_ytdlp"]
     CONFIGS["root"] = configs.root
-    CONFIGS = EasyDict(configs)
+    CONFIGS = EasyDict(CONFIGS)
     finished = 0
     with Pool(configs.num_workers) as p:
         current_time = time.perf_counter()
