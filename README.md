@@ -42,7 +42,7 @@ The largest **Driving Video** dataset to date, containing more than **1700 hours
 - Task: large-scale video prediction for driving scenes.
 - Data source: `YouTube`, with careful collection and filtering process.
 - Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries.
-- Related work: [GenAD](https://arxiv.org/abs/2403.09630)
+- Related work: [GenAD](https://arxiv.org/abs/2403.09630) **`Accepted at CVPR 2024`**
 - `Note`: Annotations for other public datasets in OpenDV-2K will not be released since we use and annotate randomly sampled data (video sequences) from these datasets, which are incomplete and hard to trace back to their origins (i.e., file name). Nevertheless, it's easy to reproduce the collection and annotation process on your own following [our paper]((https://arxiv.org/abs/2403.09630)).
 
 
@@ -53,12 +53,15 @@ With the continuous maturation and application of autonomous driving technology,
 
 > **Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future**
 > - [English Version](https://arxiv.org/abs/2312.03408)
-> - [Chinese Version](https://opendrivelab.com/Dataset_Survey_Chinese_V2.pdf)
+> - [Chinese Version](https://www.sciengine.com/SSI/doi/10.1360/SSI-2023-0313) **`Accepted at SCIENTIA SINICA Informationis (中文版)`**
 
  ```bib
-@misc{li2024opensourced,
+@journal{li2024_driving_dataset_survey,
       title={Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future}, 
-      author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Kai Yan and Chunjing Xu and Tiancai Wang and Fei Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
+      author={Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai
+and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang
+and Futang Zhu and Kai Yan and Chunjing Xu and Tiancai Wang
+and Fei Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
       year={2024},
       eprint={2312.03408},
       archivePrefix={arXiv},
