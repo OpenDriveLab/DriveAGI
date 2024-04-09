@@ -48,6 +48,7 @@ def multiple_download(video_list, configs):
     assert CONFIGS["method"] in ["youtube-dl", "yt-dlp"], "Only support `youtube-dl` and `yt-dlp`."
     CONFIGS["format"] = configs["format"] if configs["method"] == "youtube-dl" else configs["format_for_ytdlp"]
     CONFIGS["root"] = configs.root
+    CONFIGS["exception_file"] = configs.exception_file
     CONFIGS = EasyDict(CONFIGS)
     finished = 0
     with Pool(configs.num_workers) as p:
