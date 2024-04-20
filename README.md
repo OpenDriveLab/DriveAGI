@@ -57,8 +57,8 @@ With the continuous maturation and application of autonomous driving technology,
 
  ```bib
 @article{li2024_driving_dataset_survey,
-  title = {自动驾驶开源数据体系：现状与未来},
-  author = {li hongyang,Li Yang,Wang Huijie,Zeng Jia,xu huilin,Cai Pinlong,Chen Li,yan junchi,xu feng,Xiong Lu,Wang Jingdong,Zhu Futang,Xu Chunjing,Wang Tiancai,Xia Fei,mu beipeng,Peng Zhihui,Lin Dahua,Qiao Yu},
+  title = {Open-sourced Data Ecosystem in Autonomous Driving: the Present and Future},
+  author = {Hongyang Li and Yang Li and Huijie Wang and Jia Zeng and Huilin Xu and Pinlong Cai and Li Chen and Junchi Yan and Feng Xu and Lu Xiong and Jingdong Wang and Futang Zhu and Chunjing Xu and Tiancai Wang and Fei Xia and Beipeng Mu and Zhihui Peng and Dahua Lin and Yu Qiao},
   journal = {SCIENTIA SINICA Informationis},
   year = {2024},
   doi = {10.1360/SSI-2023-0313}
