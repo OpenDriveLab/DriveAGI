@@ -4,7 +4,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 ## Table of Contents
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
-- [OpenDV-YouTube](#opendv-youtube) 🔥
+- [(GenAD Dataset) OpenDV-YouTube](#opendv-youtube) 🔥
 - [DriveData Survey](#drivedata-survey)
   - [Abstract](#abstract)
   - [Related Work Collection](#related-work-collection)
@@ -28,9 +28,13 @@ Here are some key components to construct a large foundation model curated for a
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
 
 
-## OpenDV-YouTube
+## (GenAD Dataset) OpenDV-YouTube
 ![opendv](assets/opendv_examples.png)
-The largest **Driving Video** dataset to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
+[**Generalized Predictive Model for Autonomous Driving**](https://arxiv.org/abs/2403.09630) (CVPR 2024, **Highlight**)
+
+The **Largest Driving Video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
+
+
 - **Complete Video list** (under YouTube license): [google sheet link](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0)
   - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
   - Therefore, we process them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
@@ -42,8 +46,17 @@ The largest **Driving Video** dataset to date, containing more than **1700 hours
 - Task: large-scale video prediction for driving scenes.
 - Data source: `YouTube`, with careful collection and filtering process.
 - Diversity Highlights: 1700 hours of driving videos, covering more than 244 cities in 40 countries.
-- Related work: [GenAD](https://arxiv.org/abs/2403.09630) **`Accepted at CVPR 2024`**
+- Related work: [GenAD](https://arxiv.org/abs/2403.09630) **`Accepted at CVPR 2024, Highlight`**
 - `Note`: Annotations for other public datasets in OpenDV-2K will not be released since we use and annotate randomly sampled data (video sequences) from these datasets, which are incomplete and hard to trace back to their origins (i.e., file name). Nevertheless, it's easy to reproduce the collection and annotation process on your own following [our paper]((https://arxiv.org/abs/2403.09630)).
+
+```bibtex
+@article{yang2024genad,
+  title={Generalized Predictive Model for Autonomous Driving},
+  author={Jiazhi Yang and Shenyuan Gao and Yihang Qiu and Li Chen and Tianyu Li and Bo Dai and Kashyap Chitta and Penghao Wu and Jia Zeng and Ping Luo and Jun Zhang and Andreas Geiger and Yu Qiao and Hongyang Li},
+  journal={arXiv preprint arXiv:2403.09630},
+  year={2024}
+}
+```
 
 
 ## DriveData Survey
