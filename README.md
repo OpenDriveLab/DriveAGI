@@ -4,7 +4,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 ## Table of Contents
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
-- [(GenAD Dataset) OpenDV-YouTube](#(genad-dataset)-opendv-youtube) 🔥
+- [(GenAD Dataset) OpenDV-YouTube](#genad-dataset-opendv-youtube) 🔥
 - [DriveData Survey](#drivedata-survey)
   - [Abstract](#abstract)
   - [Related Work Collection](#related-work-collection)
