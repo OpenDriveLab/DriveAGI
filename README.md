@@ -50,10 +50,10 @@ The **Largest Driving Video dataset** to date, containing more than **1700 hours
 - `Note`: Annotations for other public datasets in OpenDV-2K will not be released since we randomly sampled a subset of them in training, which are incomplete and hard to trace back to their origins (i.e., file name). Nevertheless, it's easy to reproduce the collection and annotation process on your own following [our paper]((https://arxiv.org/abs/2403.09630)).
 
 ```bibtex
-@article{yang2024genad,
+@inproceedings{yang2024genad,
   title={Generalized Predictive Model for Autonomous Driving},
   author={Jiazhi Yang and Shenyuan Gao and Yihang Qiu and Li Chen and Tianyu Li and Bo Dai and Kashyap Chitta and Penghao Wu and Jia Zeng and Ping Luo and Jun Zhang and Andreas Geiger and Yu Qiao and Hongyang Li},
-  journal={arXiv preprint arXiv:2403.09630},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
 }
 ```

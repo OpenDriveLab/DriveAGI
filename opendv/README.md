@@ -95,10 +95,10 @@ The context, *i.e.* the `blip` field, is the description of the **center frame**
 If you find our work helpful, please cite the following paper.
 
 ```bibtex
-@article{yang2024genad,
+@inproceedings{yang2024genad,
   title={Generalized Predictive Model for Autonomous Driving},
   author={Jiazhi Yang and Shenyuan Gao and Yihang Qiu and Li Chen and Tianyu Li and Bo Dai and Kashyap Chitta and Penghao Wu and Jia Zeng and Ping Luo and Jun Zhang and Andreas Geiger and Yu Qiao and Hongyang Li},
-  journal={arXiv preprint arXiv:2403.09630},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
 }
 ```
