@@ -39,7 +39,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 [**Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability**](https://arxiv.org/abs/2405.17398)
 
 **Quick facts:**
-- Introducing the world's first **generalizable driving world model**
+- Introducing the world's first **generalizable driving world model**.
 - Task: High-fidelity, action-conditioned, and long-horizon future prediction for driving scenes in the wild.
 - Dataset: [`OpenDV-YouTube`](#genad-dataset-opendv-youtube), `nuScenes`
 - Repo: https://github.com/OpenDriveLab/Vista
