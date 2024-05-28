@@ -49,7 +49,21 @@ Below we would like to share the latest update from our team on the **`DriveData
 - Video Demo: https://vista-demo.github.io
 - Related work: [Vista](https://arxiv.org/abs/2405.17398), [GenAD](https://arxiv.org/abs/2403.09630)
 
+```bibtex
+@article{gao2024vista,
+ title={Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability}, 
+ author={Shenyuan Gao and Jiazhi Yang and Li Chen and Kashyap Chitta and Yihang Qiu and Andreas Geiger and Jun Zhang and Hongyang Li},
+ journal={arXiv preprint arXiv:2405.17398},
+ year={2024}
+}
 
+@inproceedings{yang2024genad,
+  title={{Generalized Predictive Model for Autonomous Driving}},
+  author={Jiazhi Yang and Shenyuan Gao and Yihang Qiu and Li Chen and Tianyu Li and Bo Dai and Kashyap Chitta and Penghao Wu and Jia Zeng and Ping Luo and Jun Zhang and Andreas Geiger and Yu Qiao and Hongyang Li},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
+}
+```
 
 ## (GenAD Dataset) OpenDV-YouTube
 ![opendv](assets/opendv_examples.png)
