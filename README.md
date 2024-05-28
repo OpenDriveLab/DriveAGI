@@ -4,6 +4,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 ## Table of Contents
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
+- [Vista](#vista) 🚀
 - [(GenAD Dataset) OpenDV-YouTube](#genad-dataset-opendv-youtube) 🔥
 - [DriveData Survey](#drivedata-survey)
   - [Abstract](#abstract)
@@ -26,6 +27,23 @@ Here are some key components to construct a large foundation model curated for a
 
 
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
+
+
+## Vista
+<div id="top" align="center">
+<p align="center">
+<img src="assets/vista-teaser.gif" width="1000px" >
+</p>
+</div>
+
+The world's first **Generalizable Driving World Model**.
+
+**Quick facts:**
+- Task: High-fidelity, action-conditioned, and long-horizon future prediction for driving scenes in the wild.
+- Dataset: [`OpenDV-YouTube`](#genad-dataset-opendv-youtube), `nuScenes`
+- Repo: https://github.com/OpenDriveLab/Vista
+- Related work: [Vista](https://arxiv.org/abs/2405.17398), [GenAD](https://arxiv.org/abs/2403.09630)
+
 
 
 ## (GenAD Dataset) OpenDV-YouTube
