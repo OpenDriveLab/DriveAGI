@@ -13,6 +13,9 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - [OpenScene](#openscene)
 - [OpenLane-V2 Update](#openlane-v2-update)
 ## NEWS
+**`2024/05/28`** We released our latest research, [Vista](#vista), a generalizable driving world model. It's capable of predicting high-fidelity and long-horizon futures, executing multi-modal actions, and serving as a generalizable reward function to assess driving behaviors. 
+
+
 **`2024/03/24`** `OpenDV-YouTube Update:` **Full suite of toolkits for OpenDV-YouTube** is now available, including data downloading and processing scripts, as well as language annotations. Please refer to [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
 
 **`2024/03/15`** We released the complete video list of `OpenDV-YouTube`, a large-scale driving video dataset, for [GenAD](https://arxiv.org/abs/2403.09630) project. Data downloading and processing script, as well as language annotations, will be released next week. Stay tuned.
