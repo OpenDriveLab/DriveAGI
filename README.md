@@ -39,7 +39,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 </p>
 </div>
 
-### [**Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability** 🌏](https://arxiv.org/abs/2405.17398)
+### [**A Generalizable Driving World Model with High Fidelity and Versatile Controllability** 🌏](https://arxiv.org/abs/2405.17398)
 
 **Quick facts:**
 - Introducing the world's first **generalizable driving world model**.
