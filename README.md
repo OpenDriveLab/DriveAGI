@@ -70,7 +70,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 
 ### [**Generalized Predictive Model for Autonomous Driving**](https://arxiv.org/abs/2403.09630) (**CVPR'24, Highlight ⭐**)
 
-#### [Paper](https://arxiv.org/abs/2403.09630) | [Video](https://www.youtube.com/watch?v=a4H6Jj-7IC0) | [Poster](assets/cvpr24_genad_poster.png) | [Slides](https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf)
+### [Paper](https://arxiv.org/abs/2403.09630) | [Video](https://www.youtube.com/watch?v=a4H6Jj-7IC0) | [Poster](assets/cvpr24_genad_poster.png) | [Slides](https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf)
 
 The **Largest Driving Video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
