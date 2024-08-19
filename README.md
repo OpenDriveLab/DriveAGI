@@ -1347,6 +1347,7 @@ Odometry, Object, Tracking, Road, Semantics</td>
 
 ## OpenScene
 <details>
+
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
 
 **Quick facts:**
@@ -1359,6 +1360,7 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 
 ## OpenLane-V2 Update
 <details>
+
 Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Map Elements**.
 
 **Quick facts:**
