@@ -47,6 +47,8 @@ Below we would like to share the latest update from our team on the **`DriveData
 </p>
 </div>
 
+> Simulated futures in a wide range of driving scenarios by [Vista](https://arxiv.org/abs/2405.17398). Best viewed in [demo page](https://vista-demo.github.io/).
+
 ### [**A Generalizable Driving World Model with High Fidelity and Versatile Controllability** 🌏](https://arxiv.org/abs/2405.17398)
 
 **Quick facts:**
