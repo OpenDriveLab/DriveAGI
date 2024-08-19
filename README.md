@@ -77,6 +77,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 
 ## GenAD: OpenDV Dataset <a name="opendv"></a>
 ![opendv](assets/opendv_examples.png)
+> Examples of **real-world** driving scenarios in the OpenDV dataset, including urban, highway, rural scenes, etc.
 
 ### [**Generalized Predictive Model for Autonomous Driving**](https://arxiv.org/abs/2403.09630) (**CVPR'24, Highlight ⭐**)
 
