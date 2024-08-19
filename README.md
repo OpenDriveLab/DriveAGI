@@ -4,15 +4,19 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 ## Table of Contents
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
-- [Vista](#vista) 🚀
-- [(GenAD Dataset) OpenDV-YouTube](#genad-dataset-opendv-youtube) 🔥
+- 🚀 [Vista](#vista)
+- ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR'24 Hightlight)
+- ⭐ [DriveLM](#drivelm) (ECCV'24 Oral)
 - [DriveData Survey](#drivedata-survey)
-  - [Abstract](#abstract)
-  - [Related Work Collection](#related-work-collection)
-- [DriveLM](#drivelm) 🔥
+  <!-- - [Abstract](#abstract)
+  - [Related Work Collection](#related-work-collection) -->
 - [OpenScene](#openscene)
 - [OpenLane-V2 Update](#openlane-v2-update)
+
+
+
 ## NEWS
+<details>
 **`2024/05/28`** We released our latest research, [Vista](#vista), a generalizable driving world model. It's capable of predicting high-fidelity and long-horizon futures, executing multi-modal actions, and serving as a generalizable reward function to assess driving behaviors. 
 
 
@@ -22,15 +26,19 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 
 **`2024/01/24`**
 We are excited to announce some update to [our survey](#drivedata-survey) and would like to thank John Lambert, Klemens Esterle from the public community for their advice to improve the manuscript.
+</details>
+
+
 ## At A Glance
 
+<details>
 Here are some key components to construct a large foundation model curated for an autonomous system.
 
 ![overview](assets/overview.png "overview")
 
 
 Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
-
+</details>
 
 ## Vista
 <div id="top" align="center">
@@ -65,14 +73,14 @@ Below we would like to share the latest update from our team on the **`DriveData
 }
 ```
 
-## (GenAD Dataset) OpenDV-YouTube
+## GenAD: OpenDV Dataset <a name="opendv"></a>
 ![opendv](assets/opendv_examples.png)
 
 ### [**Generalized Predictive Model for Autonomous Driving**](https://arxiv.org/abs/2403.09630) (**CVPR'24, Highlight ⭐**)
 
 ### [Paper](https://arxiv.org/abs/2403.09630) | [Video](https://www.youtube.com/watch?v=a4H6Jj-7IC0) | [Poster](assets/cvpr24_genad_poster.png) | [Slides](https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf)
 
-The **Largest Driving Video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
+🎦 The **Largest Driving Video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
 
 - **Complete video list** (under YouTube license): [OpenDV Videos](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0).
@@ -99,8 +107,19 @@ The **Largest Driving Video dataset** to date, containing more than **1700 hours
 }
 ```
 
+## DriveLM
+Introducing the First benchmark on **Language Prompt for Driving**.
+
+**Quick facts:**
+- Task: given the language prompts as input, predict the trajectory in the scene
+- Origin dataset: `nuScenes`, `CARLA (To be released)`
+- Repo: https://github.com/OpenDriveLab/DriveLM, https://github.com/OpenDriveLab/ELM
+- Related work: [DriveLM](https://arxiv.org/abs/2312.14150), [ELM](https://arxiv.org/abs/2403.04593)
+- Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
+
 
 ## DriveData Survey
+<details>
 
 ### Abstract
 With the continuous maturation and application of autonomous driving technology, a systematic examination of open-source autonomous driving datasets becomes instrumental in fostering the robust evolution of the industry ecosystem. In this survey, we provide a comprehensive analysis of more than 70 papers on the timeline, impact, challenges, and future trends in autonomous driving dataset.
@@ -1319,24 +1338,12 @@ Odometry, Object, Tracking, Road, Semantics</td>
 
 </table>
 </details>
+</details>
 
 
-
----
-Below we would like to share the latest update from our team on the **`DriveData`** side. We will release the detail of the **`DriveEngine`** and the **`DriveAGI`** in the future.
-
-
-## DriveLM
-Introducing the First benchmark on **Language Prompt for Driving**.
-
-**Quick facts:**
-- Task: given the language prompts as input, predict the trajectory in the scene
-- Origin dataset: `nuScenes`, `CARLA (To be released)`
-- Repo: https://github.com/OpenDriveLab/DriveLM, https://github.com/OpenDriveLab/ELM
-- Related work: [DriveLM](https://arxiv.org/abs/2312.14150), [ELM](https://arxiv.org/abs/2403.04593)
-- Related challenge: [Driving with Language AGC Challenge 2024](https://opendrivelab.com/challenge2024/#driving_with_language)
 
 ## OpenScene
+<details>
 The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-training.
 
 **Quick facts:**
@@ -1345,9 +1352,10 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Repo: https://github.com/OpenDriveLab/OpenScene
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet)
 - Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
-
+</details>
 
 ## OpenLane-V2 Update
+<details>
 Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **Standard Definition (SD) Map and Map Elements**.
 
 **Quick facts:**
@@ -1355,6 +1363,6 @@ Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **St
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
 - Related work: [OpenLane-V2](https://openreview.net/forum?id=OMOOO3ls6g), [TopoNet](https://github.com/OpenDriveLab/TopoNet), [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet)
 - Related challenge: [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology), [Mapless Driving AGC Challenge 2024](https://opendrivelab.com/challenge2024/#mapless_driving)
-
+</details>
 
 
