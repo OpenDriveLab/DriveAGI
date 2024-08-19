@@ -52,7 +52,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 **Quick facts:**
 - Introducing the world's first **generalizable driving world model**.
 - Task: High-fidelity, action-conditioned, and long-horizon future prediction for driving scenes in the wild.
-- Dataset: [`OpenDV-YouTube`](#genad-dataset-opendv-youtube), `nuScenes`
+- Dataset: [`OpenDV-YouTube`](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv), `nuScenes`
 - Code and model: https://github.com/OpenDriveLab/Vista
 - Video Demo: https://vista-demo.github.io
 - Related work: [Vista](https://arxiv.org/abs/2405.17398), [GenAD](https://arxiv.org/abs/2403.09630)
