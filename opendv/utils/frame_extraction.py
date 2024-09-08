@@ -13,6 +13,8 @@ import decord
 import cv2
 from tqdm import tqdm
 
+from utils.download import get_video_with_meta
+
 DECORD_ACCEPTABLE_TYPES = ['mp4']
 FORCE_USE_CV2 = True
 
@@ -64,10 +66,23 @@ def extract_frames(video_info):
 def count_done_frames(save_path):
     return len(os.listdir(save_path))
 
-def special_video_setting_log(video_path, height, width, exception_file):
+def special_video_setting_log(video_path, exception_file, height=None, width=None, video_reader=None):
     skipped = False
 
     exception = None
+    if video_reader is None:
+        exception = {
+            "video_path": video_path,
+            "problem": "video not found or corrupted",
+            "action": "skipped",
+            "details": "video not found or corrupted"
+        }
+        return True
+    
+    if (height is None) or (width is None):
+        height = video_reader.get(cv2.CAP_PROP_FRAME_HEIGHT)
+        width = video_reader.get(cv2.CAP_PROP_FRAME_WIDTH)
+
     if (width < 1280) and (height < 720):
         exception = {
             "video_path": video_path,
@@ -109,7 +124,7 @@ def decord_extract_frames(video_path, save_path, fps=10, discard_begin=90, disca
 
     img = video[0].asnumpy()
     frame_height, frame_width, _ = img.shape
-    if special_video_setting_log(video_path, frame_height, frame_width, msg_file):
+    if special_video_setting_log(video_path,  msg_file, frame_height, frame_width):
         return
     del img
     first_log = True
@@ -140,15 +155,13 @@ def cv2_extract_frames(video_path, save_path, fps=10, discard_begin=90, discard_
         start_index = count_done_frames(save_path) -1
         # so that we could rewrite the last frame, in case the last frame is corrupted
 
-    video = cv2.VideoCapture(video_path)
-    video_fps = video.get(cv2.CAP_PROP_FPS)
-    num_frames = int( fps * (video.get(7) // video_fps - discard_begin - discard_end) )
-    idx_width = len(str(num_frames)) if IDX_WIDTH is None else IDX_WIDTH
-    interval = video_fps / fps
-    
-    frame_height = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    frame_width = video.get(cv2.CAP_PROP_FRAME_WIDTH)
-    if special_video_setting_log(video_path, frame_height, frame_width, msg_file):
+    video, video_fps, total_frames = get_video_with_meta(video_path, need_metas=["fps", "num_frames"])
+    if video is not None:
+        num_frames = int( fps * (total_frames // video_fps - discard_begin - discard_end) )
+        idx_width = len(str(num_frames)) if IDX_WIDTH is None else IDX_WIDTH
+        interval = video_fps / fps
+
+    if special_video_setting_log(video_path, msg_file, video_reader=video):
         return
     first_log = True
     
