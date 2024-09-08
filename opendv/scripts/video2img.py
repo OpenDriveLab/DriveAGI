@@ -16,10 +16,10 @@ sys.path.append(root_dir)
 
 from utils.easydict import EasyDict
 from utils.frame_extraction import extract_frames
-from utils.download import POSSIBLE_EXTS, youtuber_formatize
+from utils.download import POSSIBLE_EXTS, youtuber_formatize, get_mini_opendv
 
 
-def collect_unfinished_videos(config, micro=False):
+def collect_unfinished_videos(config, mini=False):
     configs = EasyDict(json.load(open(config, "r")))
     root = {
         "train": configs.train_img_root,
@@ -27,8 +27,8 @@ def collect_unfinished_videos(config, micro=False):
     }
 
     meta_infos = json.load(open(configs.meta_info, "r"))
-    if micro:
-        meta_infos = meta_infos[:3]
+    if mini:
+        meta_infos = get_mini_opendv(meta_infos)
     if os.path.exists(configs.finish_log):
         finish_log = set(open(configs.finish_log, "r").readlines())
         finish_log = {x.strip() for x in finish_log}
@@ -39,6 +39,8 @@ def collect_unfinished_videos(config, micro=False):
     print("collecting unfinished videos...")
     for video_meta in tqdm(meta_infos):
         if video_meta["videoid"] in finish_log:
+            continue
+        if video_meta["split"] == "Train":
             continue
         video_path = os.path.join(configs.video_root, youtuber_formatize(video_meta["youtuber"]), video_meta['videoid'])
         for ext in POSSIBLE_EXTS:
@@ -73,14 +75,14 @@ def convert_multiprocess(video_lists, configs):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str, default='configs/video2img.json')
-    parser.add_argument('--micro', action='store_true', default=False)
+    parser.add_argument('--mini', action='store_true', default=False, help='Convert mini dataset only.')
     # parser.add_argument('--start_id', type=int, default=0)
     # parser.add_argument('--end_id', type=int, default=-1)
     # parser.add_argument('--test_video', type=str, default=None)
 
     args = parser.parse_args()
-    video_lists, meta_configs = collect_unfinished_videos(args.config, args.micro)
-
+    video_lists, meta_configs = collect_unfinished_videos(args.config, args.mini)
+    
     # if args.end_id == -1:
     #     args.end_id = len(video_lists)
     # video_lists = video_lists[args.start_id:args.end_id]

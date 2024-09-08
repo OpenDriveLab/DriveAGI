@@ -8,12 +8,13 @@ from tqdm import tqdm
 import os, sys
 import time
 import json
+import cv2
 
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(root_dir)
 
 from utils.easydict import EasyDict
-from utils.download import youtuber_formatize, POSSIBLE_EXTS
+from utils.download import youtuber_formatize, POSSIBLE_EXTS, get_video_with_meta, get_mini_opendv
 
 CONFIGS = dict()
 
@@ -80,6 +81,16 @@ def check_status(video_list, configs):
         if not exists:
             with open(configs.exception_file, "a") as f:
                 f.write(f"Video [{vid_info['videoid']}] not found in [{path}].\n")
+            continue
+        
+        _, true_duration = get_video_with_meta("{}/{}.{}".format(path, vid_info["videoid"], ext), ["duration"])
+        
+        duration_in_json = vid_info["duration"]
+        expected_duration = vid_info["length"]
+
+        if abs(true_duration - expected_duration) > 5:
+            with open(configs.exception_file, "a") as f:
+                f.write(f"Video [{vid_info['videoid']}]: Duration mismatch. Expected: {duration_in_json} ({expected_duration} seconds), True: {true_duration} seconds.\n")
 
     with open(configs.exception_file, "a") as f:
         f.write("\nChecking download status finished.")
@@ -89,6 +100,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, default="configs/download.json", help="Path to the config file. should be a `json` file.")
+    parser.add_argument("--mini", action="store_true", default=False, help="Download mini dataset only.")
     args = parser.parse_args()
     
     configs = EasyDict(json.load(open(args.config, "r")))
@@ -96,6 +108,8 @@ if __name__ == '__main__':
         f.write("")
 
     video_list = json.load(open(configs.pop("video_list"), "r"))
+    if args.mini:
+        video_list = get_mini_opendv(video_list)
     if not os.path.exists(configs.root):
         os.makedirs(configs.root, exist_ok=True)
 

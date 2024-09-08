@@ -17,6 +17,9 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 
 ## NEWS
 <details>
+
+**`2024/09/08`** We released a mini version of `OpenDV-YouTube`, containing **25 hours** of driving videos. Feel free to try the mini subset by following instructions at [OpenDV-mini](https://github.com/OpenDriveLab/DriveAGI/blob/main/opendv/README.md)!
+
 **`2024/05/28`** We released our latest research, [Vista](#vista), a generalizable driving world model. It's capable of predicting high-fidelity and long-horizon futures, executing multi-modal actions, and serving as a generalizable reward function to assess driving behaviors. 
 
 
@@ -47,7 +50,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 </p>
 </div>
 
-> Simulated futures in a wide range of driving scenarios by [Vista](https://arxiv.org/abs/2405.17398). Best viewed in [demo page](https://vista-demo.github.io/).
+> Simulated futures in a wide range of driving scenarios by [Vista](https://arxiv.org/abs/2405.17398). Best viewed on [demo page](https://vista-demo.github.io/).
 
 ### [**A Generalizable Driving World Model with High Fidelity and Versatile Controllability** 🌏](https://arxiv.org/abs/2405.17398)
 
@@ -86,11 +89,13 @@ Below we would like to share the latest update from our team on the **`DriveData
 🎦 The **Largest Driving Video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
 
-- **Complete video list** (under YouTube license): [OpenDV Videos](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I/edit#gid=0).
-  - The downloaded raw videos (`mostly 1080P`) consumes about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
+- **Complete video list** (under YouTube license): [OpenDV Videos](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I).
+  - The downloaded raw videos (`mostly 1080P`) consume about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
   - Therefore, we preprocess them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
   - It's recommended to set up your experiments on a small subset, say **1/20** of the whole dataset. After stablizing the training, you can then apply your method on the whole dataset and hope for the best 🤞.
-- **Step-by-step instruction for data preparation**: [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
+- <font style="color:#cc4e63">**[New]**</font> **Mini subset**: [OpenDV-mini](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
+  - A mini version of `OpenDV-YoUTube`. The raw videos consume about
+- **Step-by-step instruction for data preparation**: [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv/README.md).
 - **Language annotation for OpenDV-YouTube**: [OpenDV-YouTube-Language](https://huggingface.co/datasets/OpenDriveLab/OpenDV-YouTube-Language).
 
 

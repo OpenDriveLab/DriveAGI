@@ -11,6 +11,7 @@ from tqdm import tqdm
 
 KEY_MAP = {
     'train / val': 'split',
+    'mini / full set': 'subset',
     'nation or area (inferred by gpt)': 'area',
     'state, province, or city (inferred by gpt and refined by human)': 'state',
     'discarded length at the begininning (second)': 'start_discard',
