@@ -1,10 +1,10 @@
 # OpenDV-YouTube
 Due to YouTube License, we could not directly offer our processed data. However, you can follow the steps below to download the raw data and process it by yourself.
 
-**NEWS**: We just released the **<font style="color:#cc4e63">OpenDV-mini</font>** subset!
+**<font color="red">[ NEW❗️]</font>**: We just released the **<font color="red">OpenDV-mini</font>** subset!
 Please feel free to try the mini subset by following steps. Necessary information is also contained in our <a href="https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I" target="_blank">OpenDV-YouTube Google Sheet</a> (marked as `Mini` in the column `Mini / Full Set`).
 
-## About OpenDV-YouTube
+## About OpenDV-YouTube and OpenDV-mini
 
 - The complete dataset <a href="https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I" target="_blank">OpenDV-YouTube</a> is the **largest driving video dataset** to date, containing more than **1700 hours** of real-world driving videos and being 300 times larger than the widely used nuScenes dataset.
 
@@ -72,7 +72,7 @@ The download will take about $2000/\mathrm{NUM_{WORKERS}}$ hours, which may vary
 The default $\mathrm{NUM_{WORKERS}} = 90$, and you can adjust it in [config](configs/download.json#L7).
 The data will take about **3TB** of disk space.
 
-If you wish to **<font style="color:#cc4e63">use the mini subset</font>**, just simply add the `mini` option in your command, i.e. run the following command.
+If you wish to **<font color="red">use the mini subset</font>**, just simply add the `mini` option in your command, i.e. run the following command.
 
 ```cmd
 python scripts/youtube_download.py --mini >> download_output.txt
@@ -98,7 +98,7 @@ The preprocessing will take about $8000/\mathrm{NUM_{WORKERS}}$ hours, which may
 The default $\mathrm{NUM_{WORKERS}} = 90$, and you can adjust it in [config](configs/video2img.json#L6).
 Resulting images will take about **25TB** of disk space.
 
-If you wish to **<font style="color:#cc4e63">use the mini subset</font>**, just simply add the `mini` option in your command, i.e. run the following command.
+If you wish to **<font color="red">use the mini subset</font>**, just simply add the `mini` option in your command, i.e. run the following command.
 
 ```cmd
 python scripts/video2img.py --mini >> vid2img_output.txt
