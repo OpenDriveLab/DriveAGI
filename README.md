@@ -63,10 +63,10 @@ Below we would like to share the latest update from our team on the **`DriveData
 - Related work: [Vista](https://arxiv.org/abs/2405.17398), [GenAD](https://arxiv.org/abs/2403.09630)
 
 ```bibtex
-@article{gao2024vista,
+@inproceedings{gao2024vista,
  title={Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability}, 
  author={Shenyuan Gao and Jiazhi Yang and Li Chen and Kashyap Chitta and Yihang Qiu and Andreas Geiger and Jun Zhang and Hongyang Li},
- journal={arXiv preprint arXiv:2405.17398},
+ booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
  year={2024}
 }
 
