@@ -4,9 +4,9 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 ## Table of Contents
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
-- 🚀 [Vista](#vista) (NeurIPS'24)
-- ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR'24 Hightlight)
-- ⭐ [DriveLM](#drivelm) (ECCV'24 Oral)
+- 🚀 [Vista](#vista) (NeurIPS 2024)
+- ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR 2024 Hightlight)
+- ⭐ [DriveLM](#drivelm) (ECCV 2024 Oral)
 - [DriveData Survey](#drivedata-survey)
   <!-- - [Abstract](#abstract)
   - [Related Work Collection](#related-work-collection) -->
@@ -52,7 +52,7 @@ Below we would like to share the latest update from our team on the **`DriveData
 
 > Simulated futures in a wide range of driving scenarios by [Vista](https://arxiv.org/abs/2405.17398). Best viewed on [demo page](https://vista-demo.github.io/).
 
-### [🌏 **A Generalizable Driving World Model with High Fidelity and Versatile Controllability (NeurIPS 2024)**](https://arxiv.org/abs/2405.17398)
+### [🌏 **A Generalizable Driving World Model with High Fidelity and Versatile Controllability**](https://arxiv.org/abs/2405.17398) (NeurIPS 2024)
 
 **Quick facts:**
 - Introducing the world's first **generalizable driving world model**.
