@@ -94,7 +94,7 @@ Below we would like to share the latest update from our team on the **`DriveData
   - Therefore, we preprocess them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
   - It's recommended to set up your experiments on a small subset, say **1/20** of the whole dataset. An official mini subset is also provided and you can refer to [**OpenDV-mini**](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv#about-opendv-youtube-and-opendv-mini) for details. After stablizing the training, you can then apply your method on the whole dataset and hope for the best 🤞.
 - <font color="red">**[ New❗️]**</font> **Mini subset**: [OpenDV-mini](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
-  - A mini version of `OpenDV-YoUTube`. The raw videos consume about `44 GB` of storage space and the processed images will consume about `390 GB` of storage space.
+  - A mini version of `OpenDV-YouTube`. The raw videos consume about `44 GB` of storage space and the processed images will consume about `390 GB` of storage space.
 - **Step-by-step instruction for data preparation**: [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv/README.md).
 - **Language annotation for OpenDV-YouTube**: [OpenDV-YouTube-Language](https://huggingface.co/datasets/OpenDriveLab/OpenDV-YouTube-Language).
 
