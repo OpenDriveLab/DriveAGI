@@ -1,5 +1,5 @@
 git+https://github.com/ytdl-org/youtube-dl
-git+https://github.com/yt-dlp/yt-dlp
+git+https://github.com/yt-dlp/yt-dlp@a065086640e888e8d58c615d52ed2f4f4e4c9d18
 
 opencv-python
 decord

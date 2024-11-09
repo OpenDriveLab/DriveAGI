@@ -40,8 +40,6 @@ def collect_unfinished_videos(config, mini=False):
     for video_meta in tqdm(meta_infos):
         if video_meta["videoid"] in finish_log:
             continue
-        if video_meta["split"] == "Train":
-            continue
         video_path = os.path.join(configs.video_root, youtuber_formatize(video_meta["youtuber"]), video_meta['videoid'])
         for ext in POSSIBLE_EXTS:
             if os.path.exists(f"{video_path}.{ext}"):

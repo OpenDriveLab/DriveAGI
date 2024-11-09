@@ -1,7 +1,7 @@
 {
     "root": "OpenDV-YouTube/videos",
     "video_list": "meta/OpenDV-YouTube.json",
-    "method": "youtube-dl",
+    "method": "yt-dlp",
     "format": "bestvideo[height>=720,height<=1080]/best[height>=720,height<=1080]/bestvideo[height>=720]/best[height>=720]",
     "format_for_ytdlp": "bv*[height<=?1080][height>=720]/b*[height<=?1080][height>=720]",
     "num_workers": 90,
