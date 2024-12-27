@@ -163,14 +163,21 @@ def cv2_extract_frames(video_path, save_path, fps=10, discard_begin=90, discard_
 
     if special_video_setting_log(video_path, msg_file, video_reader=video):
         return
-    first_log = True
+    first_log, first_frame = True, True
     
     indices = np.array([ int(discard_begin * video_fps) + int(np.round(i * interval)) for i in range(num_frames)])
     start_time = time.perf_counter()
     ids = list(range(num_frames))
     for id in ids[start_index:]:
-        video.set(cv2.CAP_PROP_POS_FRAMES, indices[id])
-        _, frame = video.read()
+        if first_frame:
+            video.set(cv2.CAP_PROP_POS_FRAMES, indices[id])
+            video.grab()
+            first_frame = False
+        else:
+            for _ in range(indices[id] - indices[id-1]):
+                video.grab()
+
+        _, frame = video.retrieve()
         file_path = os.path.join(save_path, str(id).zfill(idx_width) + ".jpg")
         cv2.imwrite(file_path, frame)
 
