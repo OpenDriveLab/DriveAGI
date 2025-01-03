@@ -18,7 +18,9 @@ from utils.download import youtuber_formatize, POSSIBLE_EXTS, get_video_with_met
 
 CONFIGS = dict()
 
-def single_download(vid_info):
+def single_download(args):
+    vid_info, CONFIGS = args
+
     url = vid_info["link"]
     filename = vid_info["videoid"]
     folder = youtuber_formatize(vid_info["youtuber"])
@@ -54,7 +56,7 @@ def multiple_download(video_list, configs):
     finished = 0
     with Pool(configs.num_workers) as p:
         current_time = time.perf_counter()
-        for _ in tqdm(p.imap(single_download, video_list), total=video_count):
+        for _ in tqdm(p.imap(single_download, [(vid_info, CONFIGS) for vid_info in video_list]), total=video_count):
             finished += 1
             working_time = time.perf_counter() - current_time
             eta = working_time / finished * (video_count - finished)
@@ -102,7 +104,7 @@ if __name__ == '__main__':
     parser.add_argument("--config", type=str, default="configs/download.json", help="Path to the config file. should be a `json` file.")
     parser.add_argument("--mini", action="store_true", default=False, help="Download mini dataset only.")
     args = parser.parse_args()
-    
+
     configs = EasyDict(json.load(open(args.config, "r")))
     with open(configs.exception_file, "w") as f:
         f.write("")
