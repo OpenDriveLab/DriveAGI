@@ -8,7 +8,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - [NEWS](#news)
 - [At A Glance](#at-a-glance)
 - 🚀 [Vista](#vista) (NeurIPS 2024)
-- ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR 2024 Hightlight)
+- ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR 2024 Highlight)
 - ⭐ [DriveLM](#drivelm) (ECCV 2024 Oral)
 - [DriveData Survey](#drivedata-survey)
   <!-- - [Abstract](#abstract)
@@ -94,8 +94,8 @@ Below we would like to share the latest update from our team on the **`DriveData
 
 - **Complete video list** (under YouTube license): [OpenDV Videos](https://docs.google.com/spreadsheets/d/1bHWWP_VXeEe5UzIG-QgKFBdH7mNlSC4GFSJkEhFnt2I).
   - The downloaded raw videos (`mostly 1080P`) consume about `3 TB` storage space. However, these hour-long videos cannot be directly applied for model training as they are extremely memory consuming.
-  - Therefore, we preprocess them into conseductive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
-  - It's recommended to set up your experiments on a small subset, say **1/20** of the whole dataset. An official mini subset is also provided and you can refer to [**OpenDV-mini**](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv#about-opendv-youtube-and-opendv-mini) for details. After stablizing the training, you can then apply your method on the whole dataset and hope for the best 🤞.
+  - Therefore, we preprocess them into consecutive images which are more flexible and efficient to load during training. Processed images consumes about `24 TB` storage space in total.
+  - It's recommended to set up your experiments on a small subset, say **1/20** of the whole dataset. An official mini subset is also provided and you can refer to [**OpenDV-mini**](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv#about-opendv-youtube-and-opendv-mini) for details. After stabilizing the training, you can then apply your method on the whole dataset and hope for the best 🤞.
 - <font color="red">**[ New❗️]**</font> **Mini subset**: [OpenDV-mini](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv).
   - A mini version of `OpenDV-YouTube`. The raw videos consume about `44 GB` of storage space and the processed images will consume about `390 GB` of storage space.
 - **Step-by-step instruction for data preparation**: [OpenDV-YouTube](https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv/README.md).
