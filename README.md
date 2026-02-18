@@ -10,7 +10,7 @@ This is **"The One"** project that [**`OpenDriveLab`**](https://opendrivelab.com
 - 🚀 [Vista](#vista) (NeurIPS 2024)
 - ⭐ [GenAD: OpenDV Dataset](#opendv) (CVPR 2024 Hightlight)
 - ⭐ [DriveLM](#drivelm) (ECCV 2024 Oral)
-- [DriveData Survey](#drivedata-survey)
+- [DriveData Survey](#drivedata-survey) (SCIENTIA SINICA Informationis 2024)
   <!-- - [Abstract](#abstract)
   - [Related Work Collection](#related-work-collection) -->
 - [OpenScene](#openscene)
