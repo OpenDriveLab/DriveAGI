@@ -169,7 +169,7 @@ We present comprehensive paper collections, leaderboards, and challenges.(Click 
 </tr>
 
 <tr align="middle">
-      <td rowspan=7 ><a href="https://opendrivelab.com/AD23Challenge.html" target="_blank" title="Autonomous Driving Challenge">Autonomous Driving Challenge</a></td>
+      <td rowspan=7 ><a href="https://opendrivelab.com/challenge2023/" target="_blank" title="Autonomous Driving Challenge">Autonomous Driving Challenge</a></td>
   	  <td rowspan=7 > OpenDriveLab</td>
       <td rowspan=7 >CVPR2023</td>
        <td>Perception / OpenLane Topology</td>
@@ -1354,7 +1354,7 @@ The Largest up-to-date **3D Occupancy Forecasting** dataset for visual pre-train
 - Origin dataset: `nuPlan`
 - Repo: https://github.com/OpenDriveLab/OpenScene
 - Related work: [OccNet](https://github.com/OpenDriveLab/OccNet)
-- Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/AD23Challenge.html#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
+- Related challenge: [3D Occupancy Prediction Challenge 2023](https://opendrivelab.com/challenge2023/#Track3), [Occupancy and Flow AGC Challenge 2024](https://opendrivelab.com/challenge2024/#occupancy_and_flow), [Predictive World Model AGC Challenge 2024](https://opendrivelab.com/challenge2024/#predictive_world_model)
 </details>
 
 ## OpenLane-V2 Update
@@ -1366,7 +1366,7 @@ Flourishing [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) with **St
 - Task: given multi-view images and SD-map (also known as ADAS map) as input, build the driving scene on the fly _without_ the aid of HD-map. 
 - Repo: https://github.com/OpenDriveLab/OpenLane-V2
 - Related work: [OpenLane-V2](https://openreview.net/forum?id=OMOOO3ls6g), [TopoNet](https://github.com/OpenDriveLab/TopoNet), [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet)
-- Related challenge: [Lane Topology Challenge 2023](https://opendrivelab.com/AD23Challenge.html#openlane_topology), [Mapless Driving AGC Challenge 2024](https://opendrivelab.com/challenge2024/#mapless_driving)
+- Related challenge: [Lane Topology Challenge 2023](https://opendrivelab.com/challenge2023/#openlane_topology), [Mapless Driving AGC Challenge 2024](https://opendrivelab.com/challenge2024/#mapless_driving)
 </details>
 
 
